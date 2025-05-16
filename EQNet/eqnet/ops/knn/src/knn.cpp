@@ -7,7 +7,7 @@
 #include <ATen/cuda/CUDAEvent.h>
 #include <ATen/cuda/CUDAContext.h>
 
-extern THCState *state;
+// extern THCState *state;
 
 #define CHECK_CUDA(x) TORCH_CHECK(x.is_cuda(), #x, " must be a CUDAtensor ")
 #define CHECK_CONTIGUOUS(x) TORCH_CHECK(x.is_contiguous(), #x, " must be contiguous ")
