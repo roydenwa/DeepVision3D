@@ -3,7 +3,8 @@
 #include <torch/serialize/tensor.h>
 #include <torch/extension.h>
 #include <vector>
-#include <THC/THC.h>
+// #include <THC/THC.h> see https://github.com/open-mmlab/mmdetection3d/issues/1332#issuecomment-2594408887
+#include <ATen/cuda/CUDAEvent.h>
 #include <ATen/cuda/CUDAContext.h>
 
 extern THCState *state;
